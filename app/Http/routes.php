@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/githubHook','GithubHookController@index');
+Route::post('/githubHook','GithubHookController@index');
