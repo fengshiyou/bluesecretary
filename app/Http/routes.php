@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/test', function () {
     return view('welcome');
 });
 
 Route::post('/bluesecretaryHook','GithubHookController@index');
+
