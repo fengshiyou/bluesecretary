@@ -13,6 +13,6 @@ class VerifyCsrfToken extends BaseVerifier
      */
     protected $except = [
         //
-        'githubHook' //githubhook 钩子
+        'bluesecretaryHook' //githubhook 钩子
     ];
 }
