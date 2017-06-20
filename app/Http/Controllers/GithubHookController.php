@@ -18,11 +18,8 @@ class GithubHookController extends Controller
     public function index()
     {
         //
-        $z = config("config.hook.hook_secret");
-        var_dump($z);die;
-        $z = new GithubHook();
-        $z->actionGit();
-        print 1;
+        $hookModel = new GithubHook();
+        $hookModel->actionGit();
     }
 
     /**
