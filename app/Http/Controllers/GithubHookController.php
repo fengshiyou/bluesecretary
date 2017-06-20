@@ -19,7 +19,7 @@ class GithubHookController extends Controller
     {
         //
         $z = config("config.hook.hook_secret");
-        var_dump($z);
+        var_dump($z);die;
         $z = new GithubHook();
         $z->actionGit();
         print 1;
