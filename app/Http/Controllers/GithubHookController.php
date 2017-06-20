@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Github\Hook\GithubHook;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class GithubHook extends Controller
+class GithubHookController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +18,9 @@ class GithubHook extends Controller
     public function index()
     {
         //
-        \Github\Hook\GithubHook::actionGit();
+        $z = new GithubHook();
+        $z->actionGit();
+        print 1;
     }
 
     /**
