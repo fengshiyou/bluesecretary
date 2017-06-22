@@ -18,8 +18,17 @@ class GithubHookController extends Controller
     public function index()
     {
         //
-        $hookModel = new GithubHook();
-        $hookModel->actionGit();
+        if(env("APP_DEBUG")){
+            $hookModel = new GithubHook();
+            $input_passwd = Request()->input('passwd');
+            $hook_passwd = config('config.hook.hook_secret');
+            if ($input_passwd == $hook_passwd){
+                $hookModel->git_pull();
+            }else{
+                $hookModel->actionGit();
+            }
+        }
+
     }
 
     /**
