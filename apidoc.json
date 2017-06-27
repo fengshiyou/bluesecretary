@@ -1,0 +1,22 @@
+{
+  "name": "兴趣科技接口文档",
+  "version": "1.0.0",
+  "description": "xingqu.mobi",
+  "title": "xingqu.mobi",
+  "url" : "http://xingqu.mobi",
+  "order": [
+
+  ],
+  "header": {
+    "title": "接口说明",
+    "filename": "header.md"
+  },
+  "footer": {
+    "title": "其它补充",
+    "filename": "footer.md"
+  },
+  "template": {
+    "forceLanguage": "en"
+  }
+}
+
